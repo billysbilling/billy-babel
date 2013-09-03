@@ -1,0 +1,18 @@
+{
+  "name": "billy-i18n-tool",
+  "version": "0.0.0",
+  "description": "Translation tool for Billy's Billing",
+  "main": "translate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:billysbilling/billy-i18n-tool.git"
+  },
+  "author": "Adam Robertson",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/billysbilling/billy-i18n-tool/issues"
+  }
+}
