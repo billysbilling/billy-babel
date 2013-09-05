@@ -22,7 +22,7 @@
         "url": "https://github.com/billysbilling/billy-i18n-tool/issues"
     },
     "dependencies": {
-        "optimist": "~0.6.0",
+        "optimist": "~0.6.0"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
