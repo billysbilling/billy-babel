@@ -1,18 +1,30 @@
 {
-  "name": "billy-i18n-tool",
-  "version": "0.0.0",
-  "description": "Translation tool for Billy's Billing",
-  "main": "translate.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:billysbilling/billy-i18n-tool.git"
-  },
-  "author": "Adam Robertson",
-  "license": "BSD",
-  "bugs": {
-    "url": "https://github.com/billysbilling/billy-i18n-tool/issues"
-  }
+    "name": "billy-i18n-tool",
+    "version": "0.0.0",
+    "description": "Translation tool for Billy's Billing",
+    "main": "./index.js",
+    "bin": "./index.js",
+    "author": "Adam Robertson",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:billysbilling/billy-i18n-tool.git"
+    },
+    "maintainers": [{
+        "name": "Adam Robertson",
+        "email": "adam@billysbilling.com",
+        "url": "http://www.billysbilling.com"
+    }],
+    "licenses" : [{
+        "type" : "MIT",
+        "url" : "http://github.com/billysbilling/billy-i18n-tool/raw/master/LICENSE"
+    }],
+    "bugs": {
+        "url": "https://github.com/billysbilling/billy-i18n-tool/issues"
+    },
+    "dependencies": {
+        "optimist": "~0.6.0",
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }
 }
