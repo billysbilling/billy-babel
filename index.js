@@ -22,11 +22,9 @@ var red = '\x1b[31m',
     reset = '\x1b[0m';
 
 //Validate mode
-//if (mode != 'import' && mode != 'export') {
-if (mode != 'export') {
+if (mode != 'import' && mode != 'export') {
     showUsage();
-//    console.log(red + 'Mode must be either `import` or `export`.' + reset);
-    console.log(red + 'Mode must be `export`.' + reset);
+    console.log(red + 'Mode must be either `import` or `export`.' + reset);
     process.exit(1);
 }
 
@@ -47,7 +45,7 @@ function showUsage() {
         '\n' +
         'Usage:\n' +
         '    ' + argv.$0 + ' export locale output_file.csv\n' +
-//        '    ' + argv.$0 + ' import locale input_file.csv\n' +
+        '    ' + argv.$0 + ' import locale input_file.csv\n' +
         ''
     );
 }
