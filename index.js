@@ -9,6 +9,14 @@ var fromLocale = 'en_US',
     toLocale = argv._[1],
     fileName = argv._[2];
 
+//Console verbosity
+console.verbose = function() {
+    if (!argv.v) {
+        return;
+    }
+    console.log.apply(console, arguments);
+};
+
 //Colors
 var red = '\x1b[31m',
     reset = '\x1b[0m';

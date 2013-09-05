@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "optimist": "~0.6.0",
-    "to-csv": "0.0.1"
+    "csv": "~0.3.6"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
