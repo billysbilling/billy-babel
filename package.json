@@ -7,7 +7,7 @@
   "author": "Adam Robertson",
   "repository": {
     "type": "git",
-    "url": "git@github.com:billysbilling/billy-i18n-tool.git"
+    "url": "git@github.com:billysbilling/billy-babel.git"
   },
   "maintainers": [
     {
@@ -19,11 +19,11 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://github.com/billysbilling/billy-i18n-tool/raw/master/LICENSE"
+      "url": "http://github.com/billysbilling/billy-babel/raw/master/LICENSE"
     }
   ],
   "bugs": {
-    "url": "https://github.com/billysbilling/billy-i18n-tool/issues"
+    "url": "https://github.com/billysbilling/billy-babel/issues"
   },
   "dependencies": {
     "optimist": "~0.6.0",
