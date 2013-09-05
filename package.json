@@ -1,30 +1,35 @@
 {
-    "name": "billy-i18n-tool",
-    "version": "0.0.0",
-    "description": "Translation tool for Billy's Billing",
-    "main": "./index.js",
-    "bin": "./index.js",
-    "author": "Adam Robertson",
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:billysbilling/billy-i18n-tool.git"
-    },
-    "maintainers": [{
-        "name": "Adam Robertson",
-        "email": "adam@billysbilling.com",
-        "url": "http://www.billysbilling.com"
-    }],
-    "licenses" : [{
-        "type" : "MIT",
-        "url" : "http://github.com/billysbilling/billy-i18n-tool/raw/master/LICENSE"
-    }],
-    "bugs": {
-        "url": "https://github.com/billysbilling/billy-i18n-tool/issues"
-    },
-    "dependencies": {
-        "optimist": "~0.6.0"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "billy-babel",
+  "version": "0.0.0",
+  "description": "Translation tool for Billy's Billing",
+  "main": "./index.js",
+  "bin": "./index.js",
+  "author": "Adam Robertson",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:billysbilling/billy-i18n-tool.git"
+  },
+  "maintainers": [
+    {
+      "name": "Adam Robertson",
+      "email": "adam@billysbilling.com",
+      "url": "http://www.billysbilling.com"
     }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/billysbilling/billy-i18n-tool/raw/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/billysbilling/billy-i18n-tool/issues"
+  },
+  "dependencies": {
+    "optimist": "~0.6.0",
+    "to-csv": "0.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
