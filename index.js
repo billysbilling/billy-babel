@@ -4,27 +4,42 @@
 var argv = require('optimist').argv;
 
 //Variables
-var mode = argv._[0],
-    fromLocale = 'en_US',
-    toLocale = argv._[1];
+var fromLocale = 'en_US',
+    mode = argv._[0],
+    toLocale = argv._[1],
+    fileName = argv._[2];
 
 //Colors
 var red = '\x1b[31m',
-    blue = '\x1b[34m',
     reset = '\x1b[0m';
 
-
-function showUsage() {
-    console.log('Import/export Billy\'s Billing translation files\nUsage: ' + argv.$0 + ' [import|export] locale\n');
+//Validate mode
+//if (mode != 'import' && mode != 'export') {
+if (mode != 'export') {
+    showUsage();
+//    console.log(red + 'Mode must be either `import` or `export`.' + reset);
+    console.log(red + 'Mode must be `export`.' + reset);
+    process.exit(1);
 }
 
-//Validate mode
-if (mode != 'import' && mode != 'export') {
+//Check fileName
+if (!fileName) {
     showUsage();
-    console.log(red + 'Mode must be either `import` or `export`.' + reset);
+    console.log(red + 'Missing ' + mode + ' CSV filename.' + reset);
     process.exit(1);
 }
 
 //Import proper module
 var mode_modular = require('./lib/locale_' + mode);
-mode_modular.handle(fromLocale, toLocale);
+mode_modular.handle(fromLocale, toLocale, fileName);
+
+function showUsage() {
+    console.log(
+        'Import/export Billy\'s Billing translation files\n' +
+        '\n' +
+        'Usage:\n' +
+        '    ' + argv.$0 + ' export locale output_file.csv\n' +
+//        '    ' + argv.$0 + ' import locale input_file.csv\n' +
+        ''
+    );
+}
