@@ -1,6 +1,6 @@
 {
   "name": "billy-babel",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Translation tool for Billy's Billing",
   "main": "./index.js",
   "bin": "./index.js",
